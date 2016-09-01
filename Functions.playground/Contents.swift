@@ -43,3 +43,22 @@ func getAgeAndCongratulate(name: String) -> Int {
 
 let friend2 = "Pete"
 var friend2Age = getAgeAndCongratulate(friend2)
+
+
+
+func ageOfTheUniverse () -> Int {
+    return 13820000000
+}
+
+func ageOfEarth ()-> Int {
+    return 4530000000
+}
+
+func relativeToAgeOfUniv (ageOfUniv: Int, ageOfSomething: Int) {
+    print("The Universe is \(ageOfUniv/ageOfSomething) times older!!")
+}
+
+let ageUniverse = ageOfTheUniverse()
+let ageEarth = ageOfEarth()
+
+relativeToAgeOfUniv(ageUniverse, ageOfSomething: ageEarth)
